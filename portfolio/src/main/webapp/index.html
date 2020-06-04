@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Ana Mata's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </head>
   <body>
     <div id="content">
       <h1>Ana Mata's Portfolio</h1>
       <p>I'm a junior at The University of Texas at El Paso majoring in Computer science.
-          My interests include web development and databases. 
+          My interests include web development and databases.
       </p>
       <img src="Images/ana.jpg" style="height:50vh" alt="Ana Mata">
       <p>Click here to get a random anime recomendation:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <button class="btn waves-effect waves-light" onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
     </div>
   </body>

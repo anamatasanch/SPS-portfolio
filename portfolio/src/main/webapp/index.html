@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Ana Mata's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <script src="js/script.js"></script>
@@ -11,14 +12,40 @@
   </head>
   <body>
     <div id="content">
-      <h1>Ana Mata's Portfolio</h1>
-      <p>I'm a junior at The University of Texas at El Paso majoring in Computer science.
+        <nav>
+            <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo black-text">PORTFOLIO</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html" class="black-text">Sass</a></li>
+                <li><a href="badges.html" class="black-text">Components</a></li>
+                <li><a href="collapsible.html" class="black-text">Javascript</a></li>
+                <li><a href="mobile.html" class="black-text">Mobile</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html" class="black-text">Sass</a></li>
+            <li><a href="badges.html" class="black-text">Components</a></li>
+            <li><a href="collapsible.html" class="black-text">Javascript</a></li>
+            <li><a href="mobile.html" class="black-text">Mobile</a></li>
+        </ul>
+
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+    
+        <h1>Ana Mata's Portfolio</h1>
+        <p>I'm a junior at The University of Texas at El Paso majoring in Computer science.
           My interests include web development and databases.
-      </p>
-      <img src="Images/ana.jpg" style="height:50vh" alt="Ana Mata">
-      <p>Click here to get a random anime recomendation:</p>
-      <button class="btn waves-effect waves-light" onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+        </p>
+        <img src="Images/ana.jpg" style="height:50vh" alt="Ana Mata">
+        <p>Click here to get a random anime recomendation:</p>
+        <button class="btn waves-effect waves-light" onclick="addRandomGreeting()">Hello</button>
+        <div id="greeting-container"></div>
     </div>
   </body>
 </html>

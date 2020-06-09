@@ -34,7 +34,87 @@
 
 .description-container {
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     background-color: #BECBCC;
+    float: right;
+}
+
+.projects-container {
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background-color: #E18A7A;
+    float: right;
+}
+
+.project1-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #FFFFFF;
+    float: LEFT;
+}
+
+.project2-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #8B6F61;
+    float: right;
+}
+
+.project3-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #F3CFBF;
+    float: left;
+}
+
+.project4-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #FFFFFF;
+    float: right;
+}
+
+.experience-container {
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background-color: #D89D73;
+    float: left;
+}
+
+.experience1-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #D6C59C;
+    float: left;
+}
+
+.experience2-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #FFFFFF;
+    float: right;
+}
+
+.experience3-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #FFFFFF;
+    float: left;
+}
+
+.experience4-container {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    background-color: #EEDFBE;
     float: right;
 }

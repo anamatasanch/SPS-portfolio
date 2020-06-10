@@ -2,17 +2,68 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Ana Mata's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+        <nav>
+            <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo black-text">PORTFOLIO</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html" class="black-text">Sass</a></li>
+                <li><a href="badges.html" class="black-text">Components</a></li>
+                <li><a href="collapsible.html" class="black-text">Javascript</a></li>
+                <li><a href="mobile.html" class="black-text">Mobile</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html" class="black-text">Sass</a></li>
+            <li><a href="badges.html" class="black-text">Components</a></li>
+            <li><a href="collapsible.html" class="black-text">Javascript</a></li>
+            <li><a href="mobile.html" class="black-text">Mobile</a></li>
+        </ul>
+
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+
+        <div class="name-container">
+        </div>
+        <div class="contact-container">
+        </div>
+        <div class="description-container">
+        </div>
+        <div class="projects-container">
+        </div>
+        <div class="project1-container">
+        </div>
+        <div class="project2-container">
+        </div>
+        <div class="project3-container">
+        </div>
+        <div class="project4-container">
+        </div>
+        <div class="experience-container">
+        </div>
+        <div class="experience1-container">
+        </div>
+        <div class="experience2-container">
+        </div>
+        <div class="experience3-container">
+        </div>
+        <div class="experience4-container">
+        </div>
     </div>
   </body>
 </html>

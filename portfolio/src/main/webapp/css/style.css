@@ -298,3 +298,17 @@ p {
     background-color: #EEDFBE;
     float: right;
 }
+
+.hello-container {
+    width: 100%;
+    height: 10vh;
+    background-color: #985F6F;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hello-container button{
+    height: 30%;
+    width: 15%;
+}

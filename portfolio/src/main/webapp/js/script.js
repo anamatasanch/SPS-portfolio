@@ -13,17 +13,10 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Fetches hello from servlet
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Bakuman', 'Sangatsu no Lion', 'Showa Genroku Rakugo Shinju', 'Steins;Gate', 'Asobi Asobase'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-  
-}
+ async function getHello() {
+   const response = await fetch('/data');
+   const hello = await response.text();
+   document.getElementById('hello-container').innerText = hello;
+ }

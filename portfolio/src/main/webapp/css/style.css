@@ -5,7 +5,7 @@ p {
 
 #content {
   width: 100%;
-
+  min-width: 596px;
 }
 
 #greeting-container {
@@ -71,7 +71,7 @@ p {
     background-color: #BECBCC;
     float: right;
     max-height: 490px;
-    min-height: 327px;
+    min-height: 380px;
 }
 
 .skill-container hr {
@@ -212,12 +212,27 @@ p {
     float: right;
 }
 
+.projects-container-title {
+    width: 100%;
+    padding-top: 30%;
+    text-align: center;
+    font-style: italic;
+}
+
+.projects-container-title h1 {
+    font-size: 8vw;
+}
+
+.projects-container-title p {
+    font-size: 3.5vw;
+}
+
 .project1-container {
     width: 25%;
     height: 0;
     padding-bottom: 25%;
     background-color: #FFFFFF;
-    float: LEFT;
+    float: left;
 }
 
 .project2-container {

@@ -212,18 +212,18 @@ p {
     float: right;
 }
 
-.projects-container-title {
+.square-container-text {
     width: 100%;
     padding-top: 30%;
     text-align: center;
     font-style: italic;
 }
 
-.projects-container-title h1 {
+.square-container-text h1 {
     font-size: 8vw;
 }
 
-.projects-container-title p {
+.square-container-text p {
     font-size: 3.5vw;
 }
 

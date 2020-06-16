@@ -299,16 +299,28 @@ p {
     float: right;
 }
 
-.hello-container {
+.comments-container {
     width: 100%;
-    height: 10vh;
-    background-color: #985F6F;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    height: auto;
+    background-color: #E0AEA4;
 }
 
-.hello-container button{
-    height: 30%;
-    width: 15%;
+.comments-container-title{
+    padding-top: 25px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+#comments-container li {
+    font-size: 1.5vw;
+}
+
+#comments-container {
+    width: 100%;
+    padding-bottom: 100px;
+    text-align: center;
 }

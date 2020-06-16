@@ -13,10 +13,26 @@
 // limitations under the License.
 
 /**
- * Fetches hello from servlet
+ * Fetches comments from servlet
  */
- async function getHello() {
+ async function getComments() {
    const response = await fetch('/data');
-   const hello = await response.text();
-   document.getElementById('hello-container').innerText = hello;
+   const comments = await response.json();
+
+   console.log(comments);
+
+   const commentsElement = document.getElementById('comments-container');
+   commentsElement.innerHTML = '';
+   
+   for (i = 0; i<comments.length; i++){
+      commentsElement.appendChild(
+      createListElement(comments[i]));
+   }
  }
+
+ /** Creates an <li> element containing text. */
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
+}

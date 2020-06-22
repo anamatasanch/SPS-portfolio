@@ -29,7 +29,6 @@ public class DataServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    System.out.println("I do GET");
     //Convert comments arraylist to JSON
     String json = convertToJson(comments);
 
@@ -40,7 +39,6 @@ public class DataServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     // Get the input from the form.
-    System.out.println("I do POST");
     String comment = getComment(request);
     comments.add(comment);
     response.setContentType("text/html");
@@ -51,7 +49,6 @@ public class DataServlet extends HttpServlet {
   }
 
   private String convertToJson(ArrayList<String> comments) {
-    System.out.println("I convert to json");
     Gson gson = new Gson();
     String json = gson.toJson(comments);
     return json;
@@ -60,7 +57,6 @@ public class DataServlet extends HttpServlet {
    /** Returns the comment from the comment box.*/
    private String getComment(HttpServletRequest request) {
      String commentString = request.getParameter("message");
-     System.out.println("I am here");
 
      return commentString;
    }

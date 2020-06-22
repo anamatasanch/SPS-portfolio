@@ -197,7 +197,19 @@
             <script type="text/javascript">
                getComments();
             </script>
-            <div id="comments-container"></div>
+            <div id="collection-container">
+              <ul class="collection" id="comments-container">
+              </div>
+            </ul>
+            <div id="input-container">
+              <form id="comments-box" method="POST">
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br><br>
+                <button class="btn waves-effect waves-light black-text" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </form>
+            </div>
         </div>
     </div>
   </body>

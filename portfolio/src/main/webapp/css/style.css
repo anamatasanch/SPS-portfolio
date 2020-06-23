@@ -315,12 +315,41 @@ p {
     font-style: italic;
 }
 
-#comments-container li {
-    font-size: 1.5vw;
+
+
+#collection-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 100px;
 }
 
 #comments-container {
-    width: 100%;
-    padding-bottom: 100px;
+    width: 80%;
+    border: #E0AEA4;
+}
+
+#comments-container li{
+    background-color: #EFD2CB;
+    border: 1px solid #E0AEA4;
+}
+
+#input-container {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    padding-bottom: 100px;
+}
+
+#comments-box {
+    width: 80%;
+}
+
+#comments-box textarea {
+    background-color: #F6E4DF;
+}
+
+#comments-box button {
+    background-color: #EFD2CB;
 }

@@ -22,8 +22,7 @@
    console.log(comments);
 
    const commentsElement = document.getElementById('comments-container');
-   commentsElement.innerHTML = '';
-   
+
    for (i = 0; i<comments.length; i++){
       commentsElement.appendChild(
       createListElement(comments[i]));
@@ -34,5 +33,6 @@
 function createListElement(text) {
   const liElement = document.createElement('li');
   liElement.innerText = text;
+  liElement.classList.add('collection-item');
   return liElement;
 }

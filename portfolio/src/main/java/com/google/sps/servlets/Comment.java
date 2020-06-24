@@ -1,4 +1,4 @@
-package com.google.sps.servlets;
+package comments;
 
 public class Comment {
   long id;

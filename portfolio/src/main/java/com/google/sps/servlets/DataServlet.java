@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.ArrayList;
-import com.google.sps.servlets.Comment;
+import comments.Comment;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

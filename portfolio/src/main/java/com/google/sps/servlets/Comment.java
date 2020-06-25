@@ -3,11 +3,11 @@ package comments;
 public class Comment {
   long id;
   String text;
-  String timestamp;
+  String datePosted;
 
-  public Comment(long id, String text, String timestamp){
+  public Comment(long id, String text, String datePosted){
     this.id = id;
     this.text = text;
-    this.timestamp = timestamp;
+    this.datePosted = datePosted;
   }
 }

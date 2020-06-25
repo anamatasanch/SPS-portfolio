@@ -25,14 +25,14 @@
 
    for (i = 0; i<comments.length; i++){
       commentsElement.appendChild(
-      createListElement(comments[i].text, comments[i].timestamp));
+      createListElement(comments[i].text, comments[i].datePosted));
    }
  }
 
  /** Creates an <li> element containing text. */
-function createListElement(text, timestamp) {
+function createListElement(text, datePosted) {
   const liElement = document.createElement('li');
-  liElement.innerText = text + "  " + timestamp;
+  liElement.innerText = text + "  " + datePosted;
   liElement.classList.add('collection-item');
   return liElement;
 }

@@ -1,9 +1,9 @@
 package comments;
 
 public class Comment {
-  long id;
-  String text;
-  String datePosted;
+  private final long id;
+  private final String text;
+  private final String datePosted;
 
   public Comment(long id, String text, String datePosted){
     this.id = id;

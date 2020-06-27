@@ -46,7 +46,7 @@ public class DataServlet extends HttpServlet {
     for (Entity entity : results.asIterable()) {
       long id = entity.getKey().getId();
       String text = (String) entity.getProperty("text");
-      String datePosted = (String) entity.getProperty("datePosted");
+      long datePosted = (long) entity.getProperty("datePosted");
 
       Comment comment = new Comment(id, text, datePosted);
       comments.add(comment);
@@ -63,7 +63,8 @@ public class DataServlet extends HttpServlet {
     // Get the input from the form.
     String comment = getComment(request);
     response.setContentType("text/html");
-    String datePosted = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+    long datePosted = System.currentTimeMillis();
+    //String datePosted = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
 
     Entity commentEntity = new Entity("Comment");
     commentEntity.setProperty("text", comment);

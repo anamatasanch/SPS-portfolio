@@ -32,7 +32,8 @@
  /** Creates an <li> element containing text. */
 function createListElement(text, datePosted) {
   const liElement = document.createElement('li');
-  liElement.innerText = text + "  " + datePosted;
+  var date = new Date(datePosted);
+  liElement.innerText = text + "  " + date.toLocaleDateString();
   liElement.classList.add('collection-item');
   return liElement;
 }

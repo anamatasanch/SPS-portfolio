@@ -190,6 +190,28 @@
             <p>British English Olympics</p>
           </div>
         </div>
+        <!-- Translation Script -->
+        <script>
+          function requestTranslation(buttonId) {
+            const liChildren = document.getElementById(buttonId).children;
+            const text = liChildren[2].innerText;
+            const languageCode = 'en';
+            const resultContainer = liChildren[3];
+
+            const params = new URLSearchParams();
+            params.append('text', text);
+            params.append('languageCode', languageCode);
+
+            fetch('/translate', {
+              method: 'POST',
+              body: params
+            }).then(response => response.text())
+            .then((translatedMessage) => {
+              resultContainer.innerText = "Translation: " + translatedMessage;
+            });
+          }
+        </script>
+        <!-- End of Translation Script -->
         <div class="comments-container">
             <div class="comments-container-title">
               <h3> Comments </h3>

@@ -64,7 +64,6 @@ public class DataServlet extends HttpServlet {
     String comment = getComment(request);
     response.setContentType("text/html");
     long datePosted = System.currentTimeMillis();
-    //String datePosted = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
 
     Entity commentEntity = new Entity("Comment");
     commentEntity.setProperty("text", comment);

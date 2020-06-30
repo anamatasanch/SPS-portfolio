@@ -333,7 +333,7 @@ p {
 #comments-container li{
     background-color: #EFD2CB;
     border: 1px solid #E0AEA4;
-    height: 60px;
+    min-height: 60px;
 }
 
 #comments-container li button{

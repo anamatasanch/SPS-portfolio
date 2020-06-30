@@ -25,14 +25,15 @@
 
    for (i = 0; i<comments.length; i++){
       commentsElement.appendChild(
-      createListElement(comments[i]));
+      createListElement(comments[i].text, comments[i].datePosted));
    }
  }
 
  /** Creates an <li> element containing text. */
-function createListElement(text) {
+function createListElement(text, datePosted) {
   const liElement = document.createElement('li');
-  liElement.innerText = text;
+  var date = new Date(datePosted);
+  liElement.innerText = text + "  " + date.toLocaleDateString();
   liElement.classList.add('collection-item');
   return liElement;
 }

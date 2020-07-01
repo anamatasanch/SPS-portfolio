@@ -333,7 +333,13 @@ p {
 #comments-container li{
     background-color: #EFD2CB;
     border: 1px solid #E0AEA4;
+    min-height: 60px;
 }
+
+#comments-container li button{
+    float: right;
+    background-color: #E0AEA4;
+  }
 
 #input-container {
     display: flex;

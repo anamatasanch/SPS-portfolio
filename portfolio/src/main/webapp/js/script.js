@@ -25,15 +25,36 @@
 
    for (i = 0; i<comments.length; i++){
       commentsElement.appendChild(
-      createListElement(comments[i].text, comments[i].datePosted));
+      createListElement(comments[i]));
    }
  }
 
  /** Creates an <li> element containing text. */
-function createListElement(text, datePosted) {
+function createListElement(comment) {
   const liElement = document.createElement('li');
-  var date = new Date(datePosted);
-  liElement.innerText = text + "  " + date.toLocaleDateString();
+  var date = new Date(comment.datePosted);
+
+  liElement.innerText = date.toLocaleDateString();
   liElement.classList.add('collection-item');
+  liElement.setAttribute("id", comment.id);
+
+  const buttonElement = document.createElement('button');
+  buttonElement.innerText = "Translate";
+  buttonElement.classList.add('waves-effect', 'waves-light', 'btn-flat');
+  buttonElement.setAttribute("id", comment.id);
+  liElement.appendChild(buttonElement);
+  buttonElement.onclick = function() { requestTranslation(this.id); };
+
+  const brElement = document.createElement('br');
+  liElement.appendChild(brElement);
+
+  const paragElement = document.createElement('p');
+  liElement.appendChild(paragElement);
+  paragElement.innerText += comment.text;
+
+  const divElement = document.createElement('div');
+  liElement.appendChild(divElement);
+  divElement.setAttribute("id", comment.id);
+
   return liElement;
 }
